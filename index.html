@@ -3,290 +3,543 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Vishnu Bhargav Kotte — AI/ML Software Engineer focused on LLM systems, RAG, agentic AI, backend engineering, and production reliability." />
+  <title>Vishnu Bhargav Kotte — AI Engineer · LLM Systems, Agentic AI, RAG</title>
+  <meta name="description" content="Vishnu Bhargav Kotte is an AI/ML Software Engineer with 5+ years across backend, data, and production engineering, now building LLM applications, agentic AI, RAG, and evaluation for reliable AI systems." />
+  <meta name="author" content="Vishnu Bhargav Kotte" />
   <meta name="theme-color" content="#07090f" />
-  <title>Vishnu Bhargav Kotte — AI/ML Software Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Social preview. Add og:url, og:image (absolute URL), and a canonical link once the production URL is confirmed:
+  <link rel="canonical" href="https://YOUR-DOMAIN/" />
+  <meta property="og:url" content="https://YOUR-DOMAIN/" />
+  <meta property="og:image" content="https://YOUR-DOMAIN/assets/og-image.png" />
+  -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vishnu Bhargav Kotte — AI Engineer" />
+  <meta property="og:description" content="AI/ML Software Engineer building LLM applications, agentic AI, RAG, and evaluation — with a background in backend, data, and production engineering." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Vishnu Bhargav Kotte — AI Engineer" />
+  <meta name="twitter:description" content="AI/ML Software Engineer building LLM applications, agentic AI, RAG, and evaluation — with a background in backend, data, and production engineering." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="cursor-glow" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Vishnu Bhargav Kotte home">
-      <span class="brand-mark">VB</span>
-      <span class="brand-name">Vishnu Bhargav Kotte</span>
+  <!-- Shared SVG definitions for all diagrams (kept rendered at 0×0 so references resolve everywhere). -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <marker id="dg-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M1 1 L7 4 L1 7" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+      </marker>
+      <pattern id="dg-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+        <circle cx="1" cy="1" r=".9" fill="rgba(255,255,255,.08)" />
+      </pattern>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Vishnu Bhargav Kotte, back to top">
+      <span class="brand-mark" aria-hidden="true">VB</span>
+      <span>Vishnu Bhargav Kotte</span>
     </a>
-    <nav class="nav-links" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="assets/Vishnu_Bhargav_Kotte_Resume.docx" download>Résumé ↗</a>
-    <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu">
+      <span class="menu-icon" aria-hidden="true"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <div class="site-menu" id="site-menu">
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#engineering">Engineering</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="link-list header-links">
+        <li><a class="btn btn-ghost btn-sm" href="https://www.linkedin.com/in/vishnu-bhargav-0ba28b232/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+        <!-- Future GitHub link: <li><a class="btn btn-ghost btn-sm" href="GITHUB_PROFILE_URL" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li> -->
+        <li><a class="btn btn-secondary btn-sm resume-link" href="assets/Vishnu_Bhargav_Kotte_Resume.docx" download>Résumé</a></li>
+      </ul>
+    </div>
   </header>
 
-  <main>
-    <section class="hero section-shell">
-      <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> AI/ML Software Engineer · Fremont, CA</div>
-        <h1>I build AI systems that survive <span class="gradient-text">production.</span></h1>
-        <p class="hero-lede">LLM applications, retrieval systems, agentic workflows, Python backends, and evaluation pipelines — engineered for reliability, observability, and real users.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">Explore my work <span>↘</span></a>
-          <a class="btn btn-secondary" href="mailto:kottevishnubhargav@gmail.com">kottevishnubhargav@gmail.com</a>
-        </div>
-        <div class="hero-meta" aria-label="Key stats">
-          <div><strong>5+</strong><span>years in software & AI</span></div>
-          <div><strong>3.8</strong><span>MS Computer Science GPA</span></div>
-          <div><strong>2</strong><span>production-style AI systems</span></div>
-        </div>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow mono-label"><span class="status-dot" aria-hidden="true"></span>AI/ML Software Engineer · Fremont, CA</p>
+        <h1 id="hero-title">I build AI systems that work <em>beyond the demo.</em></h1>
+        <p class="hero-lede">AI/ML Software Engineer with 5+ years across backend engineering, data systems, and production software, now focused on LLM applications, Agentic AI, RAG, evaluation, and reliable AI infrastructure.</p>
+        <ul class="link-list hero-actions">
+          <li><a class="btn btn-primary" href="#projects">View my work <span aria-hidden="true">↓</span></a></li>
+          <li><a class="btn btn-secondary resume-link" href="assets/Vishnu_Bhargav_Kotte_Resume.docx" download>Download résumé</a></li>
+          <li><a class="btn btn-ghost" href="https://www.linkedin.com/in/vishnu-bhargav-0ba28b232/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></li>
+          <!-- Future GitHub link: <li><a class="btn btn-ghost" href="GITHUB_PROFILE_URL" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></li> -->
+        </ul>
       </div>
 
-      <div class="hero-visual reveal" aria-label="AI system visualization">
-        <div class="orb orb-a"></div>
-        <div class="orb orb-b"></div>
-        <div class="terminal-card glass">
-          <div class="terminal-bar">
-            <span></span><span></span><span></span>
-            <code>ai_system.py</code>
-          </div>
-          <pre><code><span class="code-dim"># production-minded AI</span>
-<span class="code-blue">system</span> = AgenticRAG(
-    retrieval=<span class="code-green">"semantic"</span>,
-    orchestration=<span class="code-green">"LangGraph"</span>,
-    api=<span class="code-green">"FastAPI"</span>,
-    evaluation=<span class="code-green">True</span>
-)
+      <figure class="hero-visual diagram-figure">
+        <!-- Wide layout -->
+        <svg class="diagram diagram--wide" viewBox="0 0 460 400" role="img" aria-labelledby="hero-dg-title hero-dg-desc">
+          <title id="hero-dg-title">Request path through an agentic AI system</title>
+          <desc id="hero-dg-desc">A request goes to an agent, which routes it to retrieval, an API, or a database. Results pass through evaluation and validation before a response is returned.</desc>
+          <rect width="460" height="400" fill="url(#dg-dots)" />
 
-<span class="code-blue">result</span> = system.run(query)
-<span class="code-purple">assert</span> result.grounded
-<span class="code-purple">assert</span> result.validated</code></pre>
-        </div>
-        <div class="signal-card glass signal-one"><span>RAG</span><b>Grounded</b></div>
-        <div class="signal-card glass signal-two"><span>API</span><b>FastAPI</b></div>
-        <div class="signal-card glass signal-three"><span>LLM</span><b>Evaluated</b></div>
-      </div>
+          <g class="dg-edges">
+            <path class="dg-edge" d="M230 52 V92" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M230 132 C230 160 80 154 80 182" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M230 132 V182" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M230 132 C230 160 380 154 380 182" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M80 218 C80 246 230 240 230 268" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M230 218 V268" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M380 218 C380 246 230 240 230 268" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M230 308 V348" marker-end="url(#dg-arrow)" />
+          </g>
+          <g aria-hidden="true">
+            <path class="dg-flow" pathLength="100" d="M230 52 V92" />
+            <path class="dg-flow" pathLength="100" style="--d:.8s" d="M230 132 C230 160 80 154 80 182" />
+            <path class="dg-flow" pathLength="100" style="--d:.8s" d="M230 132 V182" />
+            <path class="dg-flow" pathLength="100" style="--d:.8s" d="M230 132 C230 160 380 154 380 182" />
+            <path class="dg-flow" pathLength="100" style="--d:1.6s" d="M80 218 C80 246 230 240 230 268" />
+            <path class="dg-flow" pathLength="100" style="--d:1.6s" d="M230 218 V268" />
+            <path class="dg-flow" pathLength="100" style="--d:1.6s" d="M380 218 C380 246 230 240 230 268" />
+            <path class="dg-flow dg-flow--out" pathLength="100" style="--d:2.4s" d="M230 308 V348" />
+          </g>
+
+          <g class="dg-node"><rect x="170" y="16" width="120" height="36" rx="9" /><text class="dg-label" x="230" y="34">Request</text></g>
+          <g class="dg-node dg-node--accent"><rect x="155" y="92" width="150" height="40" rx="10" /><text class="dg-label" x="230" y="112">Agent</text></g>
+          <text class="dg-note" x="318" y="116">routes by intent</text>
+          <g class="dg-node dg-node--blue"><rect x="20" y="182" width="120" height="36" rx="9" /><text class="dg-label" x="80" y="200">Retrieval</text></g>
+          <g class="dg-node dg-node--blue"><rect x="170" y="182" width="120" height="36" rx="9" /><text class="dg-label" x="230" y="200">API</text></g>
+          <g class="dg-node dg-node--blue"><rect x="320" y="182" width="120" height="36" rx="9" /><text class="dg-label" x="380" y="200">Database</text></g>
+          <g class="dg-node"><rect x="125" y="268" width="210" height="40" rx="10" /><text class="dg-label" x="230" y="288">Evaluation · validation</text></g>
+          <g class="dg-node dg-node--violet"><rect x="170" y="348" width="120" height="36" rx="9" /><text class="dg-label" x="230" y="366">Response</text></g>
+        </svg>
+
+        <!-- Narrow layout (phones) -->
+        <svg class="diagram diagram--narrow" viewBox="0 0 340 240" role="img" aria-labelledby="hero-dgn-title hero-dgn-desc">
+          <title id="hero-dgn-title">Request path through an agentic AI system</title>
+          <desc id="hero-dgn-desc">A request goes to an agent, which routes it to retrieval, an API, or a database. Results pass through evaluation and validation before a response is returned.</desc>
+          <rect width="340" height="240" fill="url(#dg-dots)" />
+
+          <g>
+            <path class="dg-edge" d="M130 30 H208" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M270 50 C270 78 58 72 58 100" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M270 50 C270 78 170 72 170 100" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M270 50 C270 78 282 72 282 100" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M58 136 C58 164 108 162 108 190" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M170 136 C170 164 108 162 108 190" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M282 136 C282 164 108 162 108 190" marker-end="url(#dg-arrow)" />
+            <path class="dg-edge" d="M208 210 H230" marker-end="url(#dg-arrow)" />
+          </g>
+          <g aria-hidden="true">
+            <path class="dg-flow" pathLength="100" d="M130 30 H208" />
+            <path class="dg-flow" pathLength="100" style="--d:.8s" d="M270 50 C270 78 58 72 58 100" />
+            <path class="dg-flow" pathLength="100" style="--d:.8s" d="M270 50 C270 78 170 72 170 100" />
+            <path class="dg-flow" pathLength="100" style="--d:.8s" d="M270 50 C270 78 282 72 282 100" />
+            <path class="dg-flow" pathLength="100" style="--d:1.6s" d="M58 136 C58 164 108 162 108 190" />
+            <path class="dg-flow" pathLength="100" style="--d:1.6s" d="M170 136 C170 164 108 162 108 190" />
+            <path class="dg-flow" pathLength="100" style="--d:1.6s" d="M282 136 C282 164 108 162 108 190" />
+            <path class="dg-flow dg-flow--out" pathLength="100" style="--d:2.4s" d="M208 210 H230" />
+          </g>
+
+          <g class="dg-node"><rect x="10" y="12" width="120" height="36" rx="9" /><text class="dg-label" x="70" y="30">Request</text></g>
+          <g class="dg-node dg-node--accent"><rect x="210" y="10" width="120" height="40" rx="10" /><text class="dg-label" x="270" y="30">Agent</text></g>
+          <g class="dg-node dg-node--blue"><rect x="8" y="100" width="100" height="36" rx="9" /><text class="dg-label" x="58" y="118">Retrieval</text></g>
+          <g class="dg-node dg-node--blue"><rect x="120" y="100" width="100" height="36" rx="9" /><text class="dg-label" x="170" y="118">API</text></g>
+          <g class="dg-node dg-node--blue"><rect x="232" y="100" width="100" height="36" rx="9" /><text class="dg-label" x="282" y="118">Database</text></g>
+          <g class="dg-node"><rect x="8" y="190" width="200" height="40" rx="10" /><text class="dg-label" x="108" y="210">Evaluation · validation</text></g>
+          <g class="dg-node dg-node--violet"><rect x="232" y="192" width="100" height="36" rx="9" /><text class="dg-label" x="282" y="210">Response</text></g>
+        </svg>
+        <figcaption class="diagram-caption"><b>Fig. 01</b> — the parts of an AI system beyond the model call</figcaption>
+      </figure>
     </section>
 
-    <section id="about" class="section-shell section-grid">
-      <div class="section-kicker reveal">01 / About</div>
-      <div class="section-content reveal">
-        <h2>Engineering intelligence with a backend engineer’s discipline.</h2>
-        <p class="lead">I’m an AI/ML Software Engineer with 5+ years of experience across healthcare, enterprise backend systems, data engineering, and LLM applications. My sweet spot is turning AI prototypes into structured, testable, reliable services.</p>
-        <div class="principles-grid">
-          <article class="principle-card">
-            <span class="card-index">01</span>
-            <h3>Grounded AI</h3>
-            <p>Retrieval, context engineering, structured outputs, and validation to reduce unsupported responses.</p>
-          </article>
-          <article class="principle-card">
-            <span class="card-index">02</span>
-            <h3>Production first</h3>
-            <p>APIs, SQL, cloud infrastructure, debugging, incident response, testing, and root-cause analysis.</p>
-          </article>
-          <article class="principle-card">
-            <span class="card-index">03</span>
-            <h3>Measure quality</h3>
-            <p>Evaluation pipelines for factual consistency, schema reliability, latency, retrieval quality, and regression.</p>
-          </article>
+    <!-- Highlights -->
+    <div class="container">
+      <ul class="highlights" aria-label="Highlights">
+        <li><strong>5+ years</strong><span>Engineering across AI, backend, and data</span></li>
+        <li><strong>Production AI</strong><span>LLM systems, RAG, and evaluation</span></li>
+        <li><strong>Healthcare AI + data</strong><span>Clinical text workflows and healthcare data pipelines</span></li>
+        <li><strong>MS Computer Science</strong><span>University of the Pacific</span></li>
+      </ul>
+    </div>
+
+    <!-- About -->
+    <section class="section container reveal" id="about" aria-labelledby="about-title">
+      <p class="section-label mono-label"><span>01</span> / About</p>
+      <div>
+        <h2 id="about-title">AI is a system, not a model call.</h2>
+        <div class="about-copy">
+          <p>My path into AI engineering ran through the layers underneath it. I started as a data engineer building ETL and data-quality pipelines for healthcare datasets, spent over two years working across enterprise backend systems, automation, and production support, and most recently built LLM workflows for clinical and healthcare text.</p>
+          <p>That path shapes how I work. A useful LLM feature depends on the data feeding it, the context it retrieves, how its outputs are evaluated and validated, and how the surrounding services behave under latency, cost, and failure. I'm most useful where a prototype has to become something people can depend on.</p>
         </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section-shell section-grid">
-      <div class="section-kicker reveal">02 / Experience</div>
-      <div class="section-content reveal">
-        <div class="section-heading-row">
-          <h2>Experience</h2>
-          <span class="muted">2020 — 2026</span>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item featured">
-            <div class="timeline-rail"><span></span></div>
-            <div class="timeline-body">
-              <div class="timeline-topline">
-                <div>
-                  <h3>AI/ML Engineer <span>(LLM Systems)</span></h3>
-                  <p class="company">PathAI · Remote, USA</p>
-                </div>
-                <time>Aug 2024 — Aug 2026</time>
-              </div>
-              <p>Built LLM-powered healthcare workflows, retrieval grounding pipelines, Python evaluation systems, prompt orchestration, preprocessing pipelines, and API validation for production AI services.</p>
-              <div class="tag-row"><span>LLMs</span><span>RAG</span><span>Python</span><span>Semantic Search</span><span>Evaluation</span><span>REST APIs</span></div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-rail"><span></span></div>
-            <div class="timeline-body">
-              <div class="timeline-topline">
-                <div>
-                  <h3>Associate</h3>
-                  <p class="company">Cognizant Technology Solutions · Hyderabad, India</p>
-                </div>
-                <time>Oct 2022 — Dec 2023</time>
-              </div>
-              <p>Supported high-volume enterprise billing systems for TNMP, resolving incidents through SQL debugging, log analysis, backend validation, automation, and cross-functional production support.</p>
-              <div class="tag-row"><span>Python</span><span>SQL</span><span>Production Support</span><span>RCA</span><span>Automation</span></div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-rail"><span></span></div>
-            <div class="timeline-body">
-              <div class="timeline-topline">
-                <div>
-                  <h3>Programmer Analyst</h3>
-                  <p class="company">Cognizant Technology Solutions · Hyderabad, India</p>
-                </div>
-                <time>Aug 2021 — Sep 2022</time>
-              </div>
-              <p>Developed Python, SQL, and PL/SQL automation for billing, reporting, EDI workflows, transactional processing, and recurring enterprise operations.</p>
-              <div class="tag-row"><span>Python</span><span>SQL</span><span>PL/SQL</span><span>EDI</span><span>Backend Systems</span></div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-rail"><span></span></div>
-            <div class="timeline-body">
-              <div class="timeline-topline">
-                <div>
-                  <h3>Data Engineer</h3>
-                  <p class="company">Novartis · Remote, India</p>
-                </div>
-                <time>Jul 2020 — Jul 2021</time>
-              </div>
-              <p>Built Python ETL and data-quality pipelines for healthcare datasets, optimized SQL workflows, and created reusable preprocessing modules for analytics and ML experimentation.</p>
-              <div class="tag-row"><span>ETL</span><span>Pandas</span><span>NumPy</span><span>SQL</span><span>Data Quality</span></div>
-            </div>
-          </article>
+        <div class="concerns">
+          <p class="mono-label">What I pay attention to</p>
+          <ul class="concern-list">
+            <li>Data quality</li>
+            <li>Retrieval</li>
+            <li>Context</li>
+            <li>Evaluation</li>
+            <li>Structured outputs</li>
+            <li>Latency &amp; cost</li>
+            <li>Failure handling</li>
+            <li>API reliability</li>
+            <li>Debugging</li>
+            <li>Deployment</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section-shell section-grid projects-section">
-      <div class="section-kicker reveal">03 / Selected Work</div>
-      <div class="section-content reveal">
-        <div class="section-heading-row">
-          <h2>Systems, not demos.</h2>
-          <span class="muted">Selected projects</span>
-        </div>
+    <!-- Experience -->
+    <section class="section container reveal" id="experience" aria-labelledby="experience-title">
+      <p class="section-label mono-label"><span>02</span> / Experience</p>
+      <div>
+        <h2 id="experience-title">LLM systems, built on production and data foundations.</h2>
 
-        <article class="project-card project-primary">
-          <div class="project-copy">
-            <div class="project-number">PROJECT 01</div>
-            <h3>Production Agentic RAG Knowledge Assistant</h3>
-            <p>A production-style RAG system with agentic tool selection, multi-step orchestration, semantic retrieval, structured validation, FastAPI services, Docker packaging, and AWS deployment.</p>
-            <ul class="project-points">
-              <li>Routes user intent across document retrieval, database queries, APIs, and RAG search.</li>
-              <li>Separates ingestion, orchestration, retrieval, generation, and API layers.</li>
-              <li>Optimizes retrieval depth, context size, latency, token usage, and inference cost.</li>
+        <ol class="roles">
+          <li class="role role--current">
+            <div class="role-head">
+              <h3>PathAI <span>· AI/ML Engineer, LLM Systems</span></h3>
+              <p class="role-meta"><time datetime="2024-08">Aug 2024</time> – <time datetime="2026-08">Aug 2026</time><br />Remote, USA</p>
+            </div>
+            <p class="role-context">LLM workflows for interpreting clinical and healthcare text, from retrieval and prompting through evaluation and the services around them.</p>
+            <ul class="role-points">
+              <li>Built retrieval-based grounding with embeddings and semantic search so the model worked from relevant context, reducing unsupported responses.</li>
+              <li>Developed Python evaluation pipelines to benchmark LLM outputs, validate structured JSON responses, and measure factual consistency and formatting reliability.</li>
+              <li>Designed modular prompt orchestration with version-controlled templates, and built clinical text preprocessing pipelines with Python, Pandas, and NumPy.</li>
+              <li>Integrated REST APIs and backend validation for inference, retrieval, and structured outputs; investigated processing failures and tuned token usage, latency, and response formats.</li>
             </ul>
-            <div class="tag-row"><span>Python</span><span>FastAPI</span><span>LangGraph</span><span>FAISS</span><span>Docker</span><span>AWS</span></div>
-          </div>
-          <div class="project-visual architecture-visual" aria-label="Agentic RAG architecture diagram">
-            <div class="arch-node input-node">User Query</div>
-            <div class="arch-line vertical"></div>
-            <div class="arch-node agent-node">Agent / Router</div>
-            <div class="arch-branches">
-              <div><span class="branch-line"></span><div class="arch-node small">Vector DB</div></div>
-              <div><span class="branch-line"></span><div class="arch-node small">SQL / APIs</div></div>
-              <div><span class="branch-line"></span><div class="arch-node small">Tools</div></div>
-            </div>
-            <div class="arch-line vertical bottom"></div>
-            <div class="arch-node output-node">Grounded Response</div>
-          </div>
-        </article>
+          </li>
 
-        <article class="project-card">
-          <div class="project-copy">
-            <div class="project-number">PROJECT 02</div>
-            <h3>Real-Time AI Voice Agent</h3>
-            <p>A low-latency speech-to-speech AI system that bridges live phone audio with an LLM through persistent WebSocket connections, while recording calls and timestamped transcripts for downstream evaluation.</p>
-            <ul class="project-points">
-              <li>Bidirectional real-time audio streaming using Twilio Media Streams and WebSockets.</li>
-              <li>Scenario-driven LLM personas and conversational system prompts.</li>
-              <li>Modular telephony, backend, orchestration, scenario, and transcript layers.</li>
-            </ul>
-            <div class="tag-row"><span>OpenAI Realtime API</span><span>Twilio</span><span>WebSockets</span><span>FastAPI</span><span>Python</span></div>
-          </div>
-          <div class="project-visual waveform-visual" aria-label="Real-time voice agent visualization">
-            <div class="phone-ring"><span>☎</span></div>
-            <div class="wave-bars" aria-hidden="true">
-              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <li class="role">
+            <div class="role-head">
+              <h3>Cognizant Technology Solutions</h3>
+              <p class="role-meta"><time datetime="2021-08">Aug 2021</time> – <time datetime="2023-12">Dec 2023</time><br />Hyderabad, India</p>
             </div>
-            <div class="realtime-label"><span class="status-dot"></span> realtime / websocket</div>
-          </div>
-        </article>
+            <ul class="positions" aria-label="Roles at Cognizant">
+              <li>Associate <time datetime="2022-10">Oct 2022 – Dec 2023</time></li>
+              <li>Programmer Analyst <time datetime="2021-08">Aug 2021 – Sep 2022</time></li>
+            </ul>
+            <p class="role-context">High-volume enterprise billing and transaction systems for Texas-New Mexico Power (TNMP), supported in production with on-call responsibility.</p>
+            <ul class="role-points">
+              <li>Diagnosed production incidents and backend failures through SQL debugging, log analysis, and root cause analysis, and drove high-priority issues to resolution with client and cross-functional teams.</li>
+              <li>Ran backend validation, functional testing, and regression checks during production changes and deployments.</li>
+              <li>Wrote Python, SQL, and PL/SQL automation, scripts, and stored procedures for billing, EDI, and recurring operational workflows.</li>
+              <li>Maintained SOPs and troubleshooting documentation, reviewed team deliverables, and mentored new engineers.</li>
+            </ul>
+            <p class="role-bridge"><b>Why it matters</b>AI services fail like any other backend: bad inputs, broken integrations, silent data issues. This is where I learned to trace failures to a root cause.</p>
+          </li>
+
+          <li class="role">
+            <div class="role-head">
+              <h3>Novartis <span>· Data Engineer</span></h3>
+              <p class="role-meta"><time datetime="2020-07">Jul 2020</time> – <time datetime="2021-07">Jul 2021</time><br />Remote, India</p>
+            </div>
+            <p class="role-context">Healthcare data pipelines that turned CSV, database, and API sources into analytics- and ML-ready datasets.</p>
+            <ul class="role-points">
+              <li>Built Python ETL pipelines and SQL transformation workflows for patient-level and operational datasets, reducing manual data preparation by roughly 40%.</li>
+              <li>Implemented automated data-quality checks (schema validation, null checks, and consistency checks) ahead of downstream analytics and ML.</li>
+              <li>Wrote reusable Pandas and NumPy preprocessing and feature-engineering modules, and worked with data scientists on dataset structures and feature schemas.</li>
+              <li>Optimized SQL on 100K+ record datasets by restructuring joins and indexing, and automated scheduled batch pipelines.</li>
+            </ul>
+            <p class="role-bridge"><b>Why it matters</b>Retrieval and evaluation are only as good as the data underneath them.</p>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <section id="skills" class="section-shell section-grid">
-      <div class="section-kicker reveal">04 / Capabilities</div>
-      <div class="section-content reveal">
-        <h2>From model behavior to production infrastructure.</h2>
-        <div class="skills-board">
-          <div class="skill-group">
-            <div class="skill-label">AI + LLM Systems</div>
-            <div class="skill-cloud"><span>LLMs</span><span>RAG</span><span>Agentic AI</span><span>LangGraph</span><span>LangChain</span><span>Tool Calling</span><span>Embeddings</span><span>Semantic Search</span><span>Prompt Engineering</span><span>Context Engineering</span><span>Structured Outputs</span></div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-label">Backend + Data</div>
-            <div class="skill-cloud"><span>Python</span><span>FastAPI</span><span>REST APIs</span><span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Redis</span><span>Pandas</span><span>NumPy</span><span>ETL</span></div>
-          </div>
-          <div class="skill-group">
-            <div class="skill-label">Production + Quality</div>
-            <div class="skill-cloud"><span>AWS</span><span>Docker</span><span>GitHub</span><span>CI/CD</span><span>Linux</span><span>PyTest</span><span>Postman</span><span>Evaluation Pipelines</span><span>Debugging</span><span>RCA</span></div>
-          </div>
+    <!-- Projects -->
+    <section class="section container reveal" id="projects" aria-labelledby="projects-title">
+      <p class="section-label mono-label"><span>03</span> / Projects</p>
+      <div>
+        <h2 id="projects-title">Systems, not demos.</h2>
+        <p class="section-intro">Two personal projects, each built end to end. They show how I design AI systems when I own every layer.</p>
+
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="project project--primary" aria-labelledby="rag-title">
+            <p class="project-tag">Personal project</p>
+            <h3 id="rag-title">Production Agentic RAG Knowledge Assistant</h3>
+            <p class="project-summary">An agentic RAG service that decides which sources a question needs (documents, vector search, a database, or an external API) before generating a grounded, validated answer.</p>
+
+            <div class="project-body">
+              <div>
+                <div class="project-block">
+                  <h4 class="mono-label">Problem</h4>
+                  <p>Enterprise questions rarely live in one place. Some need passages from documents, some need structured records, some need a live API. A single vector search over everything returns plausible but incomplete context.</p>
+                </div>
+                <div class="project-block">
+                  <h4 class="mono-label">Key decisions</h4>
+                  <ol class="decisions">
+                    <li><strong>Route by intent.</strong> A LangGraph agent decides which tools to call, over one or more steps, instead of retrieving from every source for every question.</li>
+                    <li><strong>Separate the layers.</strong> Ingestion, orchestration, retrieval, generation, and the FastAPI service are independent components, so each can change without rewriting the others.</li>
+                    <li><strong>Validate before responding.</strong> Model outputs and tool responses go through structured validation and explicit handling instead of being passed straight to the user.</li>
+                  </ol>
+                </div>
+                <div class="project-block">
+                  <h4 class="mono-label">Production considerations</h4>
+                  <ul class="considerations">
+                    <li>Retrieval depth and context size tuned against answer quality, latency, token usage, and API cost.</li>
+                    <li>Ingestion pipeline for preprocessing, chunking, embedding generation, and vector indexing.</li>
+                    <li>Containerized with Docker and deployed on AWS for reproducible environments.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <figure class="diagram-figure">
+                <h4 class="mono-label">Architecture</h4>
+                <svg class="diagram diagram--lg-text" viewBox="6 6 328 584" role="img" aria-labelledby="rag-dg-title rag-dg-desc">
+                  <title id="rag-dg-title">Agentic RAG architecture</title>
+                  <desc id="rag-dg-desc">User query to a FastAPI service, then a LangGraph agent and tool router. The router selects among document retrieval, vector search, a database, and an external API. Tool context goes to the LLM, then structured validation, then a grounded response.</desc>
+
+                  <g>
+                    <path class="dg-edge" d="M170 48 V72" marker-end="url(#dg-arrow)" />
+                    <path class="dg-edge" d="M170 104 V128" marker-end="url(#dg-arrow)" />
+                    <path class="dg-edge" d="M170 160 V184" marker-end="url(#dg-arrow)" />
+                    <path class="dg-edge" d="M170 216 V240" marker-end="url(#dg-arrow)" />
+                    <path class="dg-edge" d="M170 360 V384" marker-end="url(#dg-arrow)" />
+                    <path class="dg-edge" d="M170 416 V440" marker-end="url(#dg-arrow)" />
+                    <path class="dg-edge" d="M170 472 V496" marker-end="url(#dg-arrow)" />
+                    <path class="dg-edge" d="M170 528 V552" marker-end="url(#dg-arrow)" />
+                  </g>
+                  <rect class="dg-group" x="10" y="240" width="320" height="120" rx="14" />
+                  <path class="dg-flow" pathLength="100" style="--dg-cycle:5.6s" d="M170 48 V552" aria-hidden="true" />
+
+                  <g class="dg-node"><rect x="110" y="16" width="120" height="32" rx="8" /><text class="dg-label" x="170" y="32">User query</text></g>
+                  <g class="dg-node"><rect x="90" y="72" width="160" height="32" rx="8" /><text class="dg-label" x="170" y="88">FastAPI service</text></g>
+                  <g class="dg-node dg-node--accent"><rect x="85" y="128" width="170" height="32" rx="8" /><text class="dg-label" x="170" y="144">LangGraph agent</text></g>
+                  <g class="dg-node"><rect x="95" y="184" width="150" height="32" rx="8" /><text class="dg-label" x="170" y="200">Tool router</text></g>
+                  <text class="dg-sub" x="170" y="255">tools selected per request</text>
+                  <g class="dg-node dg-node--blue"><rect x="24" y="268" width="136" height="32" rx="8" /><text class="dg-label" x="92" y="284">Documents</text></g>
+                  <g class="dg-node dg-node--blue"><rect x="180" y="268" width="136" height="32" rx="8" /><text class="dg-label" x="248" y="284">Vector search</text></g>
+                  <g class="dg-node dg-node--blue"><rect x="24" y="314" width="136" height="32" rx="8" /><text class="dg-label" x="92" y="330">Database</text></g>
+                  <g class="dg-node dg-node--blue"><rect x="180" y="314" width="136" height="32" rx="8" /><text class="dg-label" x="248" y="330">External API</text></g>
+                  <g class="dg-node"><rect x="95" y="384" width="150" height="32" rx="8" /><text class="dg-label" x="170" y="400">Tool context</text></g>
+                  <g class="dg-node"><rect x="110" y="440" width="120" height="32" rx="8" /><text class="dg-label" x="170" y="456">LLM</text></g>
+                  <g class="dg-node dg-node--accent"><rect x="70" y="496" width="200" height="32" rx="8" /><text class="dg-label" x="170" y="512">Structured validation</text></g>
+                  <g class="dg-node dg-node--violet"><rect x="90" y="552" width="160" height="32" rx="8" /><text class="dg-label" x="170" y="568">Grounded response</text></g>
+                </svg>
+                <figcaption class="diagram-caption"><b>Fig. 02</b> — architecture. The agent picks tools by intent; outputs are validated before they reach the user.</figcaption>
+              </figure>
+            </div>
+
+            <p class="stack-line"><span class="mono-label">Stack</span>Python · FastAPI · LangGraph · Embeddings · FAISS · Docker · AWS</p>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project project--pipeline" aria-labelledby="voice-title">
+            <p class="project-tag">Personal project</p>
+            <h3 id="voice-title">Real-Time AI Voice Agent</h3>
+            <p class="project-summary">A phone-based voice agent that streams live call audio to a speech-to-speech model and back, with recordings and transcripts captured for evaluation.</p>
+
+            <figure class="diagram-figure">
+              <h4 class="mono-label">Architecture</h4>
+              <!-- Wide layout -->
+              <svg class="diagram diagram--wide diagram--lg-text" viewBox="0 0 700 236" role="img" aria-labelledby="voice-dg-title voice-dg-desc">
+                <title id="voice-dg-title">Real-time voice agent architecture</title>
+                <desc id="voice-dg-desc">A phone call streams audio through Twilio Media Streams over a persistent WebSocket to a FastAPI bridge, which relays it to the OpenAI Realtime API. Voice responses stream back along the same path. Scenario system prompts configure the model, and the bridge captures call recordings and timestamped transcripts.</desc>
+
+                <g>
+                  <path class="dg-edge" d="M122 102 H150" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M264 102 H292" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M406 102 H434" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M548 102 H576" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M152 120 H124" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M294 120 H266" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M436 120 H408" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M578 120 H550" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge dg-edge--dashed" d="M492 136 V178" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge dg-edge--dashed" d="M634 56 V82" marker-end="url(#dg-arrow)" />
+                </g>
+                <g aria-hidden="true">
+                  <path class="dg-flow" pathLength="100" d="M10 102 H690" />
+                  <path class="dg-flow dg-flow--out" pathLength="100" style="--d:2.4s" d="M690 120 H10" />
+                </g>
+
+                <g class="dg-node"><rect x="10" y="84" width="112" height="54" rx="10" /><text class="dg-label" x="66" y="103">Phone call</text><text class="dg-sub" x="66" y="121">caller audio</text></g>
+                <g class="dg-node dg-node--blue"><rect x="152" y="84" width="112" height="54" rx="10" /><text class="dg-label" x="208" y="103">Twilio</text><text class="dg-sub" x="208" y="121">Media Streams</text></g>
+                <g class="dg-node"><rect x="294" y="84" width="112" height="54" rx="10" /><text class="dg-label" x="350" y="103">WebSocket</text><text class="dg-sub" x="350" y="121">persistent</text></g>
+                <g class="dg-node dg-node--accent"><rect x="436" y="84" width="112" height="54" rx="10" /><text class="dg-label" x="492" y="103">FastAPI</text><text class="dg-sub" x="492" y="121">bridge</text></g>
+                <g class="dg-node dg-node--violet"><rect x="578" y="84" width="112" height="54" rx="10" /><text class="dg-label" x="634" y="103">OpenAI</text><text class="dg-sub" x="634" y="121">Realtime API</text></g>
+                <g class="dg-node"><rect x="578" y="10" width="112" height="46" rx="10" /><text class="dg-label" x="634" y="27">Scenarios</text><text class="dg-sub" x="634" y="43">system prompts</text></g>
+                <g class="dg-node"><rect x="397" y="180" width="190" height="46" rx="10" /><text class="dg-label" x="492" y="197">Recording + transcripts</text><text class="dg-sub" x="492" y="213">timestamped events</text></g>
+              </svg>
+
+              <!-- Narrow layout (phones) -->
+              <svg class="diagram diagram--narrow diagram--lg-text" viewBox="30 2 262 464" role="img" aria-labelledby="voice-dgn-title voice-dgn-desc">
+                <title id="voice-dgn-title">Real-time voice agent architecture</title>
+                <desc id="voice-dgn-desc">A phone call streams audio through Twilio Media Streams over a persistent WebSocket to a FastAPI bridge, which relays it to the OpenAI Realtime API. Voice responses stream back along the same path, and the bridge captures call recordings and timestamped transcripts.</desc>
+
+                <g>
+                  <path class="dg-edge" d="M128 58 V88" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M128 138 V168" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M128 218 V248" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M128 298 V328" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M152 90 V60" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M152 170 V140" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M152 250 V220" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge" d="M152 330 V300" marker-end="url(#dg-arrow)" />
+                  <path class="dg-edge dg-edge--dashed" d="M240 274 H276 V434 H242" marker-end="url(#dg-arrow)" />
+                </g>
+                <g aria-hidden="true">
+                  <path class="dg-flow" pathLength="100" d="M128 10 V378" />
+                  <path class="dg-flow dg-flow--out" pathLength="100" style="--d:2.4s" d="M152 378 V10" />
+                </g>
+
+                <g class="dg-node"><rect x="40" y="10" width="200" height="48" rx="10" /><text class="dg-label" x="140" y="27">Phone call</text><text class="dg-sub" x="140" y="44">caller audio</text></g>
+                <g class="dg-node dg-node--blue"><rect x="40" y="90" width="200" height="48" rx="10" /><text class="dg-label" x="140" y="107">Twilio</text><text class="dg-sub" x="140" y="124">Media Streams</text></g>
+                <g class="dg-node"><rect x="40" y="170" width="200" height="48" rx="10" /><text class="dg-label" x="140" y="187">WebSocket</text><text class="dg-sub" x="140" y="204">persistent</text></g>
+                <g class="dg-node dg-node--accent"><rect x="40" y="250" width="200" height="48" rx="10" /><text class="dg-label" x="140" y="267">FastAPI</text><text class="dg-sub" x="140" y="284">bridge</text></g>
+                <g class="dg-node dg-node--violet"><rect x="40" y="330" width="200" height="48" rx="10" /><text class="dg-label" x="140" y="347">OpenAI</text><text class="dg-sub" x="140" y="364">Realtime API</text></g>
+                <g class="dg-node"><rect x="40" y="410" width="200" height="48" rx="10" /><text class="dg-label" x="140" y="427">Recording + transcripts</text><text class="dg-sub" x="140" y="444">timestamped events</text></g>
+              </svg>
+
+              <p class="lane-key" aria-hidden="true"><span><i></i>caller audio in</span><span><i class="out"></i>voice response out</span></p>
+              <figcaption class="diagram-caption"><b>Fig. 03</b> — architecture. Audio streams both ways over a persistent WebSocket; the FastAPI bridge relays it and captures recordings and transcripts.</figcaption>
+            </figure>
+
+            <div class="project-columns">
+              <div class="project-block">
+                <h4 class="mono-label">Problem</h4>
+                <p>A phone conversation can't be built as request and response. Audio has to flow both ways continuously, with low enough latency that the conversation doesn't stall.</p>
+              </div>
+              <div class="project-block">
+                <h4 class="mono-label">Key decisions</h4>
+                <ol class="decisions">
+                  <li><strong>Persistent WebSocket bridge.</strong> A FastAPI service manages real-time audio between Twilio Media Streams and the OpenAI Realtime API over persistent WebSocket connections.</li>
+                  <li><strong>Scenario-driven behavior.</strong> Personas and system prompts are defined per scenario, so one pipeline can run many test conversations.</li>
+                  <li><strong>Capture everything.</strong> Call audio and timestamped transcript events are preserved for evaluation and debugging.</li>
+                </ol>
+              </div>
+              <div class="project-block">
+                <h4 class="mono-label">Production considerations</h4>
+                <ul class="considerations">
+                  <li>Designed for low-latency bidirectional audio streaming and real-time conversational interaction.</li>
+                  <li>Telephony, API, LLM orchestration, scenarios, and transcript processing are separate modules that can be extended independently.</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="stack-line"><span class="mono-label">Stack</span>Python · FastAPI · Twilio Media Streams · WebSockets · OpenAI Realtime API</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="education" class="section-shell section-grid">
-      <div class="section-kicker reveal">05 / Education</div>
-      <div class="section-content reveal">
-        <div class="education-grid">
-          <article class="education-card">
-            <div class="edu-year">2024 — 2025</div>
-            <h3>Master of Science<br>Computer Science</h3>
+    <!-- Engineering principles -->
+    <section class="section container reveal" id="engineering" aria-labelledby="engineering-title">
+      <p class="section-label mono-label"><span>04</span> / Engineering</p>
+      <div>
+        <h2 id="engineering-title">How I think about production AI.</h2>
+
+        <ol class="principles">
+          <li class="principle">
+            <span class="principle-num" aria-hidden="true">01</span>
+            <h3>Ground the model</h3>
+            <div>
+              <p>Answer quality is mostly decided before generation: what gets retrieved, how much context is passed, and whether it's the right context.</p>
+              <p class="evidence">Seen in: retrieval grounding at PathAI · tool routing in the Agentic RAG project</p>
+            </div>
+          </li>
+          <li class="principle">
+            <span class="principle-num" aria-hidden="true">02</span>
+            <h3>Evaluate everything</h3>
+            <div>
+              <p>Reading a few outputs isn't evaluation. Quality needs repeatable checks for factual consistency, schema validity, formatting, and regressions.</p>
+              <p class="evidence">Seen in: LLM evaluation pipelines at PathAI · regression testing at Cognizant</p>
+            </div>
+          </li>
+          <li class="principle">
+            <span class="principle-num" aria-hidden="true">03</span>
+            <h3>Design for failure</h3>
+            <div>
+              <p>Models, retrieval, tools, APIs, and databases each fail differently. Validate at the boundaries and make failures traceable.</p>
+              <p class="evidence">Seen in: incident root cause analysis at Cognizant · structured validation in the Agentic RAG project</p>
+            </div>
+          </li>
+          <li class="principle">
+            <span class="principle-num" aria-hidden="true">04</span>
+            <h3>Optimize the whole system</h3>
+            <div>
+              <p>Quality has to be balanced against latency, context size, token usage, reliability, and cost, tuned together rather than one at a time.</p>
+              <p class="evidence">Seen in: token and latency tuning at PathAI · retrieval depth and context size in the Agentic RAG project</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container reveal" id="skills" aria-labelledby="skills-title">
+      <p class="section-label mono-label"><span>05</span> / Skills</p>
+      <div>
+        <h2 id="skills-title">Tools behind the work above.</h2>
+        <dl class="skills">
+          <div><dt class="mono-label">AI Systems</dt><dd>LLMs · RAG · Agentic AI · Tool calling · LangGraph · LangChain · Prompt engineering · Embeddings · Semantic search · Vector search (FAISS, Chroma, Pinecone) · LLM evaluation · Structured output validation</dd></div>
+          <div><dt class="mono-label">Backend</dt><dd>Python · FastAPI · REST APIs · API integration · JSON processing · Java · SQL</dd></div>
+          <div><dt class="mono-label">Data</dt><dd>Pandas · NumPy · ETL / data pipelines · Data-quality validation · PostgreSQL · MySQL · MongoDB · Redis · Oracle · PL/SQL</dd></div>
+          <div><dt class="mono-label">Infrastructure</dt><dd>AWS (EC2, IAM, VPC) · Docker · Git · CI/CD · Linux</dd></div>
+          <div><dt class="mono-label">Testing / Reliability</dt><dd>PyTest · Postman · API testing · Regression testing · Backend validation · Debugging · Root cause analysis · Production support</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section container reveal" id="education" aria-labelledby="education-title">
+      <p class="section-label mono-label"><span>06</span> / Education</p>
+      <div>
+        <h2 id="education-title">Education</h2>
+        <div class="education">
+          <div class="degree">
+            <h3>Master of Science, Computer Science</h3>
             <p>University of the Pacific · Stockton, CA</p>
-            <strong>GPA 3.8</strong>
-          </article>
-          <article class="education-card">
-            <div class="edu-year">2017 — 2021</div>
-            <h3>Bachelor’s<br>Electronics & Communication Engineering</h3>
+            <p class="degree-meta">2024 – 2025<br />GPA 3.8</p>
+          </div>
+          <div class="degree">
+            <h3>Bachelor's, Electronics and Communication Engineering</h3>
             <p>Chaitanya Bharathi Institute of Technology · Telangana, India</p>
-            <strong>GPA 3.4</strong>
-          </article>
+            <p class="degree-meta">2017 – 2021<br />GPA 3.4</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section-shell contact-section reveal">
+    <!-- Contact -->
+    <section class="contact container reveal" id="contact" aria-labelledby="contact-title">
       <div class="contact-panel">
         <div>
-          <span class="eyebrow">Let’s build something useful.</span>
-          <h2>Looking for an AI engineer who thinks beyond the demo?</h2>
+          <p class="eyebrow mono-label"><span class="status-dot" aria-hidden="true"></span>Contact</p>
+          <h2 id="contact-title">Let's build AI that works in production.</h2>
+          <p class="contact-copy">I'm interested in AI engineering, applied AI, forward deployed engineering, LLM systems, and agentic AI roles, especially where AI has to work with real data, APIs, and users.</p>
         </div>
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:kottevishnubhargav@gmail.com">Email me ↗</a>
-          <a class="btn btn-secondary" href="tel:+13412529107">+1 (341) 252-9107</a>
-          <a class="text-link" href="assets/Vishnu_Bhargav_Kotte_Resume.docx" download>Download résumé ↓</a>
-        </div>
+        <ul class="link-list contact-links">
+          <li><a class="btn btn-primary" href="mailto:kottevishnubhargav@gmail.com">kottevishnubhargav@gmail.com</a></li>
+          <li><a class="btn btn-secondary" href="https://www.linkedin.com/in/vishnu-bhargav-0ba28b232/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></li>
+          <!-- Future GitHub link: <li><a class="btn btn-secondary" href="GITHUB_PROFILE_URL" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></li> -->
+          <li><a class="btn btn-secondary resume-link" href="assets/Vishnu_Bhargav_Kotte_Resume.docx" download>Download résumé</a></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>Vishnu Bhargav Kotte <span>© <span id="year"></span></span></p>
-    <p>AI/ML · LLM Systems · RAG · Backend Engineering</p>
+  <footer class="site-footer container">
+    <p>Vishnu Bhargav Kotte · © <span id="year">2026</span></p>
+    <ul class="link-list footer-links">
+      <li><a href="mailto:kottevishnubhargav@gmail.com">Email</a></li>
+      <li><a href="https://www.linkedin.com/in/vishnu-bhargav-0ba28b232/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+      <!-- Future GitHub link: <li><a href="GITHUB_PROFILE_URL" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a></li> -->
+      <li><a class="resume-link" href="assets/Vishnu_Bhargav_Kotte_Resume.docx" download>Résumé</a></li>
+    </ul>
   </footer>
 
   <script src="script.js"></script>
